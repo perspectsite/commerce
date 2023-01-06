@@ -1,0 +1,45 @@
+
+This is the order details for {{ order['order_id'] }} placed on {{ order['charge_date']|unixtime  }}. 
+
+
+************
+Hi {{ first_name }}!
+************
+
+{{ site['site_title'] }} received a new order!
+
+Order ID:  {{ order['order_id'] }}
+--------------
+
+{{ order['charge_date']|unixtime  }}
+--------
+
+Description
+
+Amount
+
+{% for item in order['line_items'] %}
+
+{{ item['quantity'] }} {{ item['description'] }}
+{{ item['amount_total']|get_currency_locale(item['currency']) }}
+
+{% endfor %}
+
+Total
+
+{{ order['amount_total'] }}
+
+The customer's shipping address is:                                  
+
+{{ order['shipping']['name'] }}
+{{ order['shipping']['address']['line1'] }}
+{%if order['shipping']['address']['line2'] is defined and order['shipping']['address']['line2'] is sameas true %} {{ order['shipping']['address']['line2'] }} {%endif%}
+{{ order['shipping']['address']['city'] }}, {{ order['shipping']['address']['state'] }}  {{ order['shipping']['address']['postal_code'] }}            
+{{ order['shipping']['address']['country'] }}
+
+
+
+Cheers,
+Perspect
+
+

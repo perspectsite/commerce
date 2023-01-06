@@ -1,0 +1,18 @@
+.blog {
+    .blog-section {
+        img {
+            height: 325px;
+            object-fit: cover;
+        }
+    }
+
+    .input-control {
+        width: 100%;
+        background: transparent;
+        border: 1px solid #e5e5e5;
+        padding: 0 15px;
+        max-width: 100%;
+        outline: none;
+        border-radius: 3px;
+    }
+}

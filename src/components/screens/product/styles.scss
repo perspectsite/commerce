@@ -1,0 +1,34 @@
+.product-page {
+    .carousel-indicators [data-bs-target] {
+        width: 100px;
+        height: 66px;
+        opacity: 1;
+        border: 2px solid transparent;
+
+        img {
+            width: 100px;
+            height: 66px;
+            object-fit: cover;
+        }
+    }
+
+    .carousel-indicators {
+       width: 100%;
+       margin-left: 0;
+       margin-right: 0;
+    }
+
+    .carousel-indicators .active {
+        border: 2px solid #ce0e0e;
+    }
+
+    .product-box {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 590px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.products {
+  .nav-tabs {
+    .vertical-navs {
+      border-radius: 0;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &.active {
+        border-left: 3px solid;
+        border-color: var(--theme-primaryColor);
+        color: var(--theme-primaryColor);
+      }
+    }
+  }
+}

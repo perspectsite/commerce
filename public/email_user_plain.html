@@ -1,0 +1,45 @@
+This is a receipt for your recent purchase on {{ order['charge_date'] }}. 
+
+
+************
+Hi {{ order['shipping']['name'] }}!
+************
+
+Thanks for shopping at {{site['site_title']}}. Here is your order confirmation:
+
+Order ID:  {{ order['order_id'] }}
+--------------
+
+{{ order['charge_date'] }}
+--------
+
+Description
+
+Amount
+
+{% for item in order['line_items'] %}
+
+{{ item['quantity'] }} {{ item['description'] }}
+{{ item['amount_total']|get_currency_locale(item['currency']) }}
+
+{% endfor %}
+
+Total
+
+{{ order['amount_total'] }}
+
+We'll send your order to:                                    
+
+{{ order['shipping']['name'] }}
+{{ order['shipping']['address']['line1'] }}
+{%if order['shipping']['address']['line2'] is defined and order['shipping']['address']['line2'] is sameas true %} {{ order['shipping']['address']['line2'] }} {%endif%}
+{{ order['shipping']['address']['city'] }}, {{ order['shipping']['address']['state'] }}  {{ order['shipping']['address']['postal_code'] }}            
+{{ order['shipping']['address']['country'] }}
+
+
+If you have any questions about this receipt, please email hello@example.com for assistance.
+
+Cheers,
+{{site['site_title']}} 
+
+
