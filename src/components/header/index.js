@@ -159,7 +159,7 @@ const Header = () => {
       <header>
         {location.pathname === "/checkout/test-success" ? null : (
           <div className="text-center top-nav-alert bg-secondary-clr py-3 text-white">
-            <p>Free shipping on all orders!</p>
+            <p>Big Announcement!  You just started an e-commerce site on Perspect!</p>
           </div>
         )}
         <nav className={classes}>
