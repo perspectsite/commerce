@@ -21,7 +21,7 @@ const OrderSuccess = () => {
           <div className="page-card relative bg-white mx-auto px-5 py-8 rounded-md max-w-2xl">
             <div className="text-left z-10">
               <h3 className="text-3xl font-bold mb-4">
-                <span className="primary-clr">{perspect.site_title}</span> Order
+                <span className="primary-clr">{window.perspect.site_title}</span> Order
                 Successfully Placed!
               </h3>
               <p className="text-lg mb-3">
