@@ -7,14 +7,14 @@ const About = () => {
         <div
           className="flex-container justify-center bg-cover bg-no-repeat bg-fixed banner-bg"
           style={{
-            backgroundImage: "url(//{perspect.domain})",
+            backgroundImage: "url(//{window.perspect.domain})",
           }}
         >
           <div className="text-center z-10">
             <h1 className="text-white">
               About <span className="primary-clr">Us</span>
             </h1>
-            <h2 className="text-white">{perspect.site_description}</h2>
+            <h2 className="text-white">{window.perspect.site_description}</h2>
           </div>
         </div>
       </div>
