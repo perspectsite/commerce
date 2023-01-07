@@ -178,7 +178,7 @@ const Home = ({ product_categories_json }) => {
             <h1 className="text-white">
               Welcome to <span className="primary-clr">{perspect.site_title}</span>
             </h1>
-            <h2 className="text-white">Serving Health</h2>
+            <h2 className="text-white">{window.perspect.site_description}</h2>
           </div>
         </div>
       </div>
