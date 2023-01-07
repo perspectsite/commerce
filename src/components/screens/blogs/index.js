@@ -24,7 +24,7 @@ const Blogs = ({ blog_json }) => {
           <div className="md:mx-20 px-8">
             <div>
               <h3 className="text-[2rem] font-bold mb-8 border-b py-3">
-                {perspect.site_title} Blog
+                {window.perspect.site_title} Blog
               </h3>
             </div>
             {blog_json
