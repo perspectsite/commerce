@@ -1,7 +1,6 @@
 {
   "name": "commerce",
   "version": "0.1.0",
-  "homepage": "/home",
   "private": true,
   "dependencies": {
     "@stripe/stripe-js": "^1.31.0",
@@ -19,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH='./templates/home/' react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
