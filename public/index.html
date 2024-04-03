@@ -3,16 +3,16 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="{{ site['site_description'] }}" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <meta name="description" content="A Perspect Site" />
+  <link rel="apple-touch-icon" href="/logo192.png" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="/manifest.json" />
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,7 +28,6 @@
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Bebas+Neue&family=Fira+Sans+Condensed:wght@300&family=Hind+Madurai:wght@300&family=Libre+Franklin&family=Manrope:wght@300&family=Montserrat&family=Nunito+Sans:wght@400;600&family=Poppins:wght@400;600;700&family=Sansita+Swashed:wght@700&family=Shippori+Antique&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
-  <title>"{{ site['site_title'] }}"</title>
 
 </head>
 
@@ -54,10 +53,6 @@
     perspect.spkt = "{{ stripe_pk_test }}";
     perspect.said = '{{ stripe_account_id }}';
     perspect.site_env = 'test';
-    perspect.site_name = "{{ site.site_name }}";
-    perspect.site_description = "{{ site.site_description }}";
-    perspect.site_title = "{{ site.site_title }}";
-    perspect.domain = "{{ site.custom_domain or site.domain }}";
     window.product_categories_json = {{ product_categories_json|tojson|safe }};
     window.pages = {{ pages_posts|tojson|safe }};
 
